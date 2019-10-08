@@ -1,5 +1,6 @@
-package com.test.usuario;
+package com.test.usuario.repositorios;
 
+import com.test.usuario.encapsulacion.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

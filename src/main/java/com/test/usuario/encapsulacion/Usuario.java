@@ -1,4 +1,4 @@
-package com.test.usuario;
+package com.test.usuario.encapsulacion;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

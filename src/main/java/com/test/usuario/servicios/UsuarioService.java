@@ -1,5 +1,7 @@
-package com.test.usuario;
+package com.test.usuario.servicios;
 
+import com.test.usuario.repositorios.UsuarioRepository;
+import com.test.usuario.encapsulacion.Usuario;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
