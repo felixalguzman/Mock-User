@@ -24,6 +24,14 @@ public class UsuarioController {
         return new ResponseEntity<>(usuario, status);
     }
 
+    @RequestMapping(value = "mecanico/validar")
+    public ResponseEntity<Usuario> validarMecanico(@RequestBody Usuario usuario) {
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
+        HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
+        return new ResponseEntity<>(usuario, status);
+
+    }
+
     @PostMapping("usuario/crear")
     public ResponseEntity<Usuario> crear(@RequestParam("user") int user, @RequestParam("pass") int pass) {
         Usuario usuario = new Usuario(user, pass);
