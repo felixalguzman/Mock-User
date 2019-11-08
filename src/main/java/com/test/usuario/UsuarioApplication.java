@@ -18,11 +18,11 @@ public class UsuarioApplication {
         UsuarioService usuarioService = (UsuarioService) context.getBean("usuarioService");
         ParadaService paradaService = (ParadaService) context.getBean("paradaService");
 
-        Usuario usuario = new Usuario(1234, 123456);
-        Usuario usuario1 = new Usuario(4321, 1234);
-        Usuario usuario2 = new Usuario(9876, 123478);
-        Usuario usuario3 = new Usuario(4567, 123490);
-        Usuario usuario4 = new Usuario(3210, 1234321);
+        Usuario usuario = new Usuario(1234, 1234, "Merlin");
+        Usuario usuario1 = new Usuario(4321, 4321, "Felix");
+        Usuario usuario2 = new Usuario(1111, 2222, "Alma");
+        Usuario usuario3 = new Usuario(321, 123, "Jose");
+        Usuario usuario4 = new Usuario(3210, 1234321, "Perez");
 
         usuarioService.crear(usuario);
         usuarioService.crear(usuario1);

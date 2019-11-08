@@ -14,12 +14,15 @@ public class Usuario {
     private int user;
     private int pass;
 
+    private String nombre;
+
     public Usuario() {
     }
 
-    public Usuario(int user, int pass) {
+    public Usuario(int user, int pass, String nombre) {
         this.user = user;
         this.pass = pass;
+        this.nombre = nombre;
     }
 
     public Long getId() {
@@ -44,5 +47,13 @@ public class Usuario {
 
     public void setPass(int pass) {
         this.pass = pass;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }

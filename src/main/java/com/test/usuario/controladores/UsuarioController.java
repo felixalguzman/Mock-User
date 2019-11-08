@@ -17,24 +17,40 @@ public class UsuarioController {
         this.usuarioService = usuarioService;
     }
 
-    @RequestMapping(value = "usuario/validar", method = RequestMethod.GET)
-    public ResponseEntity<Usuario> validar(@RequestParam("user") int user, @RequestParam("pass") int pass) {
-        Usuario usuario = usuarioService.validarUsuario(user, pass);
-        HttpStatus status = usuario != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
-        return new ResponseEntity<>(usuario, status);
+    @RequestMapping(value = "usuario/validar", method = RequestMethod.POST)
+    public ResponseEntity<Usuario> validar(@RequestBody Usuario usuario) {
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
+        HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
+        return new ResponseEntity<>(mecanico, status);
     }
 
     @RequestMapping(value = "mecanico/validar")
     public ResponseEntity<Usuario> validarMecanico(@RequestBody Usuario usuario) {
         Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
         HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
-        return new ResponseEntity<>(usuario, status);
+        return new ResponseEntity<>(mecanico, status);
+
+    }
+
+    @RequestMapping(value = "calidad/validar")
+    public ResponseEntity<Usuario> validarCalidad(@RequestBody Usuario usuario) {
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
+        HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
+        return new ResponseEntity<>(mecanico, status);
+
+    }
+
+    @RequestMapping(value = "floorHelper/validar")
+    public ResponseEntity<Usuario> validarFloorHelper(@RequestBody Usuario usuario) {
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
+        HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
+        return new ResponseEntity<>(mecanico, status);
 
     }
 
     @PostMapping("usuario/crear")
-    public ResponseEntity<Usuario> crear(@RequestParam("user") int user, @RequestParam("pass") int pass) {
-        Usuario usuario = new Usuario(user, pass);
+    public ResponseEntity<Usuario> crear(@RequestParam("user") int user, @RequestParam("pass") int pass, @RequestParam("nombre") String nombre) {
+        Usuario usuario = new Usuario(user, pass, nombre);
         usuarioService.crear(usuario);
         return new ResponseEntity<>(usuario, HttpStatus.OK);
     }
