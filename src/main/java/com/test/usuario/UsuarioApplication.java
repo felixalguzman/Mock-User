@@ -19,8 +19,8 @@ public class UsuarioApplication {
         ParadaService paradaService = (ParadaService) context.getBean("paradaService");
 
         Usuario usuario = new Usuario(1234, 1234, "Merlin");
-        Usuario usuario1 = new Usuario(4321, 4321, "Felix");
-        Usuario usuario2 = new Usuario(1111, 2222, "Alma");
+        Usuario usuario1 = new Usuario(4321, 4321, "Felix Alejandro Guzman Garcia");
+        Usuario usuario2 = new Usuario(1111, 2222, "Alma Ramona Rosa Perez ");
         Usuario usuario3 = new Usuario(321, 123, "Jose");
         Usuario usuario4 = new Usuario(3210, 1234321, "Perez");
 
