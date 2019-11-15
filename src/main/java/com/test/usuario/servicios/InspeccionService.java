@@ -19,6 +19,14 @@ public class InspeccionService {
         inspeccionRepository.save(inspeccion);
     }
 
+    public void crear(Inspeccion... inspeccions) {
+
+        for (Inspeccion inspeccion : inspeccions) {
+            inspeccionRepository.save(inspeccion);
+
+        }
+    }
+
     public List<Inspeccion> buscarTodas() {
         return inspeccionRepository.findAll();
     }

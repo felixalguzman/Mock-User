@@ -21,7 +21,7 @@ public class UsuarioApplication {
 
         UsuarioService usuarioService = (UsuarioService) context.getBean("usuarioService");
         ParadaService paradaService = (ParadaService) context.getBean("paradaService");
-        InspeccionService inspeccionService = (InspeccionService)context.getBean("inspeccionService");
+        InspeccionService inspeccionService = (InspeccionService) context.getBean("inspeccionService");
 
         Usuario usuario = new Usuario(1234, 1234, "Merlin");
         Usuario usuario1 = new Usuario(4321, 4321, "Felix Alejandro Guzman Garcia");
@@ -35,10 +35,10 @@ public class UsuarioApplication {
         usuarioService.crear(usuario3);
         usuarioService.crear(usuario4);
 
-        Parada parada = new Parada(1,5);
-        Parada parada1 = new Parada(33,6);
-        Parada parada2 = new Parada(33,7);
-        Parada parada3 = new Parada(2,1);
+        Parada parada = new Parada(1, 5);
+        Parada parada1 = new Parada(33, 6);
+        Parada parada2 = new Parada(33, 7);
+        Parada parada3 = new Parada(2, 1);
 
         paradaService.crear(parada);
         paradaService.crear(parada1);
@@ -46,19 +46,28 @@ public class UsuarioApplication {
         paradaService.crear(parada3);
 
 
-        Inspeccion inspeccion = new Inspeccion("Limpieza Lona", LocalTime.of(8,0));
-        Inspeccion inspeccion1 = new Inspeccion("Limpieza filtro", LocalTime.of(9,0));
-        Inspeccion inspeccion2 = new Inspeccion("Limpieza lubricacion de maquina", LocalTime.of(10,30));
-        Inspeccion inspeccion3 = new Inspeccion("Verificacion de calibracion de paste loop", LocalTime.of(11,0));
-        Inspeccion inspeccion4 = new Inspeccion("Verificacion de los sprints del top carier", LocalTime.of(12,0));
-        Inspeccion inspeccion5 = new Inspeccion("Alma Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper.", LocalTime.of(11,0));
+        Inspeccion inspeccion = new Inspeccion("Limpieza Lona", LocalTime.of(8, 0));
+        Inspeccion inspeccion1 = new Inspeccion("Limpieza filtro", LocalTime.of(9, 0));
+        Inspeccion inspeccion2 = new Inspeccion("Limpieza lubricacion de maquina", LocalTime.of(10, 30));
+        Inspeccion inspeccion3 = new Inspeccion("Verificacion de calibracion de paste loop", LocalTime.of(11, 0));
+        Inspeccion inspeccion4 = new Inspeccion("Verificacion de los sprints del top carier", LocalTime.of(12, 0));
+        Inspeccion inspeccion5 = new Inspeccion("Alma Lorem ipsum dolor de los sprints del top carier. Maecenas semper.", LocalTime.of(6, 0));
+        Inspeccion inspeccion6 = new Inspeccion("Alma Lorem ipsum dolor sit amet,Maecenas semper.", LocalTime.of(14, 0));
+        Inspeccion inspeccion7 = new Inspeccion("Alma Lorem ipsum dolor sit amet, Maecenas semper.", LocalTime.of(1, 0));
+        Inspeccion inspeccion8 = new Inspeccion("Alma Lorem ipsum dolor sit ametsemper.", LocalTime.of(23, 0));
+        Inspeccion inspeccion9 = new Inspeccion("Alma Lorem ipsum dolor sit ametadipiscing elit. Maecenas semper.", LocalTime.of(1, 30));
+        Inspeccion inspeccion10 = new Inspeccion("Alma Lorem t, consectetur adipiscing elit. Maecenas semper.", LocalTime.of(16, 0));
+        Inspeccion inspeccion11 = new Inspeccion("Alma Lorem sit amet, consectetur adipiscing elit. Maecenas semper.", LocalTime.of(15, 0));
+        Inspeccion inspeccion12 = new Inspeccion("Alma Lorem adipiscing elit. Maecenas semper.", LocalTime.of(17, 0));
+        Inspeccion inspeccion13 = new Inspeccion("Alma Lorem ipsum dolor Alma Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper. sit amet, consectetur adipiscing elit. Maecenas semper.", LocalTime.of(18, 0));
+        Inspeccion inspeccion14 = new Inspeccion("Alma Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper.", LocalTime.of(20, 0));
+        Inspeccion inspeccion15 = new Inspeccion("Limpieza Lona", LocalTime.of(9, 31));
+        Inspeccion inspeccion16 = new Inspeccion("Limpieza Lona", LocalTime.of(10, 31));
+        Inspeccion inspeccion17 = new Inspeccion("Limpieza Lona", LocalTime.of(11, 29));
+        Inspeccion inspeccion18 = new Inspeccion("Limpieza Lona", LocalTime.of(12, 10));
 
-        inspeccionService.crear(inspeccion);
-        inspeccionService.crear(inspeccion1);
-        inspeccionService.crear(inspeccion2);
-        inspeccionService.crear(inspeccion3);
-        inspeccionService.crear(inspeccion4);
-        inspeccionService.crear(inspeccion5);
+
+        inspeccionService.crear(inspeccion, inspeccion1, inspeccion2, inspeccion3, inspeccion4, inspeccion5, inspeccion6, inspeccion7, inspeccion8, inspeccion9, inspeccion10, inspeccion11, inspeccion12, inspeccion13, inspeccion14, inspeccion15, inspeccion16, inspeccion17, inspeccion18);
     }
 
 
