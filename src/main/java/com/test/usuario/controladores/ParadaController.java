@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController()
+@RequestMapping(value = "paradas")
 public class ParadaController {
 
     private final ParadaService paradaService;
@@ -18,16 +19,16 @@ public class ParadaController {
         this.paradaService = paradaService;
     }
 
-    @GetMapping(value = "paradas", produces = "application/json")
+    @CrossOrigin("*")
+    @GetMapping(value = "/", produces = "application/json")
     public ResponseEntity<List<Parada>> listar() {
         return new ResponseEntity<>(paradaService.buscarTodas(), HttpStatus.OK);
     }
 
-    @RequestMapping(value = "parada/validar", method = RequestMethod.GET)
-    public ResponseEntity<Parada> validar(@RequestParam("codigo") int codigo, @RequestParam("idMaquina") int maquina) {
-        System.out.println("codigo: " + codigo + " maquina: " + maquina);
-        Parada parada = paradaService.buscarPorCodigoParadaYIdMaquina(codigo, maquina);
-        HttpStatus status = parada != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
-        return new ResponseEntity<>(parada, status);
+    @RequestMapping(value = "validar", method = RequestMethod.POST)
+    public ResponseEntity<Parada> validar(@RequestBody Parada parada) {
+        Parada parada1 = paradaService.buscarPorCodigo(parada.getCodigoParada());
+        HttpStatus status = parada1 != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
+        return new ResponseEntity<>(parada1, status);
     }
 }

@@ -24,6 +24,10 @@ public class ParadaService {
     }
 
     public Parada buscarPorCodigoParadaYIdMaquina(int codigoParada, int idMaquina) {
-        return paradaRepository.findByCodigoParadaAndIdMaquina(codigoParada, idMaquina).orElse(null);
+        return paradaRepository.findByCodigoParadaAndIdMachine(codigoParada, idMaquina).orElse(null);
+    }
+
+    public Parada buscarPorCodigo(int codigo){
+        return paradaRepository.findByCodigoParada(codigo).orElse(null);
     }
 }

@@ -11,16 +11,19 @@ public class Parada {
     @GeneratedValue
     private Long id;
 
-    private int idMaquina;
+    private int idMachine;
 
     private int codigoParada;
+
+    private String texto;
 
     public Parada() {
     }
 
-    public Parada(int idMaquina, int codigoParada) {
-        this.idMaquina = idMaquina;
+    public Parada(int idMachine, int codigoParada, String texto) {
+        this.idMachine = idMachine;
         this.codigoParada = codigoParada;
+        this.texto = texto;
     }
 
     public Long getId() {
@@ -31,12 +34,12 @@ public class Parada {
         this.id = id;
     }
 
-    public int getIdMaquina() {
-        return idMaquina;
+    public int getIdMachine() {
+        return idMachine;
     }
 
-    public void setIdMaquina(int idMaquina) {
-        this.idMaquina = idMaquina;
+    public void setIdMachine(int idMachine) {
+        this.idMachine = idMachine;
     }
 
     public int getCodigoParada() {
@@ -45,5 +48,13 @@ public class Parada {
 
     public void setCodigoParada(int codigoParada) {
         this.codigoParada = codigoParada;
+    }
+
+    public String getTexto() {
+        return texto;
+    }
+
+    public void setTexto(String texto) {
+        this.texto = texto;
     }
 }
