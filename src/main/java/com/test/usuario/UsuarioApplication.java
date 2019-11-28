@@ -35,10 +35,10 @@ public class UsuarioApplication {
         usuarioService.crear(usuario3);
         usuarioService.crear(usuario4);
 
-        Parada parada = new Parada(1, 5, "Parada 5");
-        Parada parada1 = new Parada(33, 6, "Parada por codigo numero 6");
-        Parada parada2 = new Parada(33, 7, "Parada por codigo numero 7");
-        Parada parada3 = new Parada(2, 1, "Parada por codigo numero 1");
+        Parada parada = new Parada("1", 5, "Parada 5");
+        Parada parada1 = new Parada("33", 6, "Parada por codigo numero 6");
+        Parada parada2 = new Parada("33", 7, "Parada por codigo numero 7");
+        Parada parada3 = new Parada("2", 1, "Parada por codigo numero 1");
 
         paradaService.crear(parada);
         paradaService.crear(parada1);

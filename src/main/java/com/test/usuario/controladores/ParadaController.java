@@ -27,7 +27,10 @@ public class ParadaController {
 
     @RequestMapping(value = "validar", method = RequestMethod.POST)
     public ResponseEntity<Parada> validar(@RequestBody Parada parada) {
+        System.out.println("parada a validar: " + parada.getCodigoParada());
         Parada parada1 = paradaService.buscarPorCodigo(parada.getCodigoParada());
+        System.out.println("parada a validar: " + parada.getCodigoParada());
+
         HttpStatus status = parada1 != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
         return new ResponseEntity<>(parada1, status);
     }
