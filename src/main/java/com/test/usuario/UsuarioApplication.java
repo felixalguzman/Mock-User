@@ -39,11 +39,13 @@ public class UsuarioApplication {
         Parada parada1 = new Parada("33", 6, "Parada por codigo numero 6");
         Parada parada2 = new Parada("33", 7, "Parada por codigo numero 7");
         Parada parada3 = new Parada("2", 1, "Parada por codigo numero 1");
+        Parada parada4 = new Parada("2", 0, "Parada por codigo numero 0");
 
         paradaService.crear(parada);
         paradaService.crear(parada1);
         paradaService.crear(parada2);
         paradaService.crear(parada3);
+        paradaService.crear(parada4);
 
 
         Inspeccion inspeccion = new Inspeccion("Limpieza Lona", LocalTime.of(8, 0));
