@@ -3,6 +3,7 @@ package com.test.usuario;
 import com.test.usuario.encapsulacion.Inspeccion;
 import com.test.usuario.encapsulacion.Parada;
 import com.test.usuario.encapsulacion.Usuario;
+import com.test.usuario.enums.TipoUsuario;
 import com.test.usuario.servicios.InspeccionService;
 import com.test.usuario.servicios.ParadaService;
 import com.test.usuario.servicios.UsuarioService;
@@ -23,11 +24,11 @@ public class UsuarioApplication {
         ParadaService paradaService = (ParadaService) context.getBean("paradaService");
         InspeccionService inspeccionService = (InspeccionService) context.getBean("inspeccionService");
 
-        Usuario usuario = new Usuario(1234, 1234, "Merlin");
-        Usuario usuario1 = new Usuario(4321, 4321, "Felix Alejandro Guzman Garcia");
-        Usuario usuario2 = new Usuario(1111, 2222, "Alma Ramona Rosa Perez ");
-        Usuario usuario3 = new Usuario(321, 123, "Jose");
-        Usuario usuario4 = new Usuario(3210, 1234321, "Perez");
+        Usuario usuario = new Usuario(1234, 1234, TipoUsuario.OPERARIO ,"Merlin");
+        Usuario usuario1 = new Usuario(1111, 1111,TipoUsuario.CALIDAD ,"Felix Alejandro Guzman Garcia");
+        Usuario usuario2 = new Usuario(2222, 2222, TipoUsuario.MECANICO ,"Alma Ramona Rosa Perez ");
+        Usuario usuario3 = new Usuario(321, 321,TipoUsuario.FLOORHELPER ,"Jose");
+        Usuario usuario4 = new Usuario(123, 123,TipoUsuario.CALIDAD, "Perez");
 
         usuarioService.crear(usuario);
         usuarioService.crear(usuario1);

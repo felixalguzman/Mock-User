@@ -1,5 +1,6 @@
 package com.test.usuario.controladores;
 
+import com.test.usuario.enums.TipoUsuario;
 import com.test.usuario.servicios.UsuarioService;
 import com.test.usuario.encapsulacion.Usuario;
 import org.springframework.http.HttpStatus;
@@ -19,14 +20,14 @@ public class UsuarioController {
 
     @RequestMapping(value = "usuario/validar", method = RequestMethod.POST)
     public ResponseEntity<Usuario> validar(@RequestBody Usuario usuario) {
-        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass(), TipoUsuario.OPERARIO);
         HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
         return new ResponseEntity<>(mecanico, status);
     }
 
     @RequestMapping(value = "mecanico/validar")
     public ResponseEntity<Usuario> validarMecanico(@RequestBody Usuario usuario) {
-        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass(), TipoUsuario.MECANICO);
         HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
         return new ResponseEntity<>(mecanico, status);
 
@@ -34,7 +35,7 @@ public class UsuarioController {
 
     @RequestMapping(value = "calidad/validar")
     public ResponseEntity<Usuario> validarCalidad(@RequestBody Usuario usuario) {
-        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass(), TipoUsuario.CALIDAD);
         HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
         return new ResponseEntity<>(mecanico, status);
 
@@ -42,18 +43,12 @@ public class UsuarioController {
 
     @RequestMapping(value = "floorHelper/validar")
     public ResponseEntity<Usuario> validarFloorHelper(@RequestBody Usuario usuario) {
-        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass(), TipoUsuario.FLOORHELPER);
         HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
         return new ResponseEntity<>(mecanico, status);
 
     }
 
-    @PostMapping("usuario/crear")
-    public ResponseEntity<Usuario> crear(@RequestParam("user") int user, @RequestParam("pass") int pass, @RequestParam("nombre") String nombre) {
-        Usuario usuario = new Usuario(user, pass, nombre);
-        usuarioService.crear(usuario);
-        return new ResponseEntity<>(usuario, HttpStatus.OK);
-    }
 
     @GetMapping("usuarios")
     public ResponseEntity<List<Usuario>> todos() {
