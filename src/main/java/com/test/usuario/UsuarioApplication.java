@@ -72,13 +72,14 @@ public class UsuarioApplication {
         Inspeccion inspeccion17 = new Inspeccion("Limpieza Lona", LocalTime.of(16, 30));
         Inspeccion inspeccion18 = new Inspeccion("Limpieza Lona", LocalTime.of(17, 30));
         Inspeccion inspeccion19 = new Inspeccion("Limpieza Lona", LocalTime.of(18, 30));
-        Inspeccion inspeccion20 = new Inspeccion("Limpieza Lona", LocalTime.of(9, 30));
+        Inspeccion inspeccion20 = new Inspeccion("Limpieza Lona", LocalTime.of(19, 30));
         Inspeccion inspeccion21 = new Inspeccion("Limpieza Lona", LocalTime.of(20, 30));
-        Inspeccion inspeccion22 = new Inspeccion("Limpieza Lona", LocalTime.of(21, 0));
-        Inspeccion inspeccion23 = new Inspeccion("Limpieza Lona", LocalTime.of(22, 0));
-        Inspeccion inspeccion24 = new Inspeccion("Limpieza Lona", LocalTime.of(23, 0));
-        Inspeccion inspeccion25 = new Inspeccion("Limpieza Lona", LocalTime.of(1, 0));
-        Inspeccion inspeccion26 = new Inspeccion("Limpieza Lona", LocalTime.of(2, 0));
+        Inspeccion inspeccion22 = new Inspeccion("Limpieza Lona", LocalTime.of(21, 30));
+        Inspeccion inspeccion23 = new Inspeccion("Limpieza Lona", LocalTime.of(22, 30));
+        Inspeccion inspeccion24 = new Inspeccion("Limpieza Lona", LocalTime.of(23, 30));
+        Inspeccion inspeccion25 = new Inspeccion("Limpieza Lona", LocalTime.of(0, 30));
+        System.out.println("tiempo hora 0 o 12am " + inspeccion25);
+        Inspeccion inspeccion26 = new Inspeccion("Limpieza Lona", LocalTime.of(1, 30));
 
         Inspeccion inspeccion27 = new Inspeccion("Limpieza lubricacion de maquina", LocalTime.of(14, 30));
         Inspeccion inspeccion28 = new Inspeccion("Verificacion de calibracion de paste loop", LocalTime.of(14, 30));

@@ -47,4 +47,11 @@ public class Inspeccion {
     public void setHora(LocalTime hora) {
         this.hora = hora;
     }
+
+    @Override
+    public String toString() {
+        return "Inspeccion [hora=" + hora + ", id=" + id + ", texto=" + texto + "]";
+    }
+
+    
 }
