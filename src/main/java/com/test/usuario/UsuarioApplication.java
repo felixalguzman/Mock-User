@@ -56,8 +56,8 @@ public class UsuarioApplication {
         Inspeccion inspeccion5 = new Inspeccion("Limpieza Lona", LocalTime.of(10, 45));
         Inspeccion inspeccion6 = new Inspeccion("Limpieza Lona", LocalTime.of(11, 45));
         Inspeccion inspeccion7 = new Inspeccion("Limpieza Lona", LocalTime.of(12, 45));
-        Inspeccion inspeccion8 = new Inspeccion("Limpieza Lona", LocalTime.of(14, 0));
-        Inspeccion inspeccion9 = new Inspeccion("Limpieza Lona", LocalTime.of(15, 0));
+        Inspeccion inspeccion8 = new Inspeccion("Limpieza Lona", LocalTime.of(14, 30));
+        Inspeccion inspeccion9 = new Inspeccion("Limpieza Lona", LocalTime.of(15, 30));
 
         Inspeccion inspeccion10 = new Inspeccion("Limpieza filtro", LocalTime.of(6, 30));
         Inspeccion inspeccion11 = new Inspeccion("Limpieza filtro", LocalTime.of(8, 45));
@@ -81,9 +81,9 @@ public class UsuarioApplication {
         System.out.println("tiempo hora 0 o 12am " + inspeccion25);
         Inspeccion inspeccion26 = new Inspeccion("Limpieza Lona", LocalTime.of(1, 30));
 
-        Inspeccion inspeccion27 = new Inspeccion("Limpieza lubricacion de maquina", LocalTime.of(14, 30));
-        Inspeccion inspeccion28 = new Inspeccion("Verificacion de calibracion de paste loop", LocalTime.of(14, 30));
-        Inspeccion inspeccion29 = new Inspeccion("Verificacion de los sprints del top carier", LocalTime.of(14, 30));
+        Inspeccion inspeccion27 = new Inspeccion("Limpieza lubricacion de maquina", LocalTime.of(16, 30));
+        Inspeccion inspeccion28 = new Inspeccion("Verificacion de calibracion de paste loop", LocalTime.of(16, 30));
+        Inspeccion inspeccion29 = new Inspeccion("Verificacion de los sprints del top carier", LocalTime.of(16, 30));
 
         inspeccionService.crear(inspeccion, inspeccion2, inspeccion3, inspeccion4, inspeccion5, inspeccion6,
                 inspeccion7, inspeccion8, inspeccion9, inspeccion10, inspeccion11, inspeccion12, inspeccion13,
