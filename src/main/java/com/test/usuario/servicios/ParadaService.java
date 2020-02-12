@@ -19,13 +19,17 @@ public class ParadaService {
         paradaRepository.save(parada);
     }
 
+    public void crear(Parada... paradas){
+        for (Parada parada : paradas) {
+            paradaRepository.save(parada);
+        }
+    }
+
     public List<Parada> buscarTodas() {
         return paradaRepository.findAll();
     }
 
-    public Parada buscarPorCodigoParadaYIdMaquina(int codigoParada, int idMaquina) {
-        return paradaRepository.findByCodigoParadaAndIdMachine(codigoParada, idMaquina).orElse(null);
-    }
+
 
     public Parada buscarPorCodigo(int codigo){
         return paradaRepository.findByCodigoParada(codigo).orElse(null);

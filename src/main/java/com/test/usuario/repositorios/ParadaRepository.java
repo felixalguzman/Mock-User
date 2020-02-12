@@ -9,7 +9,7 @@ import java.util.Optional;
 @Repository
 public interface ParadaRepository extends JpaRepository<Parada, Long> {
 
-    Optional<Parada> findByCodigoParadaAndIdMachine(int codigoParada, int idMaquina);
+//    Optional<Parada> findByCodigoParadaAndIdMachine(int codigoParada, int idMaquina);
 
     Optional<Parada> findByCodigoParada(int codigoParada);
 }
