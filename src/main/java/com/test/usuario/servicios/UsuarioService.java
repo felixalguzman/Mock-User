@@ -22,13 +22,20 @@ public class UsuarioService {
         usuarioRepository.save(usuario);
     }
 
+    @Transactional
+    public void crear(Usuario... usuarios) {
+        for (Usuario usuario2 : usuarios) {
+
+            usuarioRepository.save(usuario2);
+        }
+    }
+
     public Usuario validarUsuario(int user, int pass) {
         return usuarioRepository.findByUserAndPass(user, pass).orElse(null);
     }
 
     public Usuario validarUsuario(int user, int pass, TipoUsuario tipoUsuario) {
-        return usuarioRepository.findByUserAndPassAndTipoUsuario(user, pass, tipoUsuario)
-                .orElse(null);
+        return usuarioRepository.findByUserAndPassAndTipoUsuario(user, pass, tipoUsuario).orElse(null);
     }
 
     public List<Usuario> buscarTodos() {

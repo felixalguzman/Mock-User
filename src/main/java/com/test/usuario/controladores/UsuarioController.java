@@ -20,14 +20,14 @@ public class UsuarioController {
 
     @RequestMapping(value = "usuario/validar", method = RequestMethod.POST)
     public ResponseEntity<Usuario> validar(@RequestBody Usuario usuario) {
-        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass(), TipoUsuario.OPERARIO);
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
         HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
         return new ResponseEntity<>(mecanico, status);
     }
 
     @RequestMapping(value = "mecanico/validar")
     public ResponseEntity<Usuario> validarMecanico(@RequestBody Usuario usuario) {
-        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass(), TipoUsuario.MECANICO);
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
         HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
         return new ResponseEntity<>(mecanico, status);
 
@@ -35,7 +35,7 @@ public class UsuarioController {
 
     @RequestMapping(value = "calidad/validar")
     public ResponseEntity<Usuario> validarCalidad(@RequestBody Usuario usuario) {
-        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass(), TipoUsuario.CALIDAD);
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
         HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
         return new ResponseEntity<>(mecanico, status);
 
@@ -43,7 +43,7 @@ public class UsuarioController {
 
     @RequestMapping(value = "floorHelper/validar")
     public ResponseEntity<Usuario> validarFloorHelper(@RequestBody Usuario usuario) {
-        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass(), TipoUsuario.FLOORHELPER);
+        Usuario mecanico = usuarioService.validarUsuario(usuario.getUser(), usuario.getPass());
         HttpStatus status = mecanico != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
         return new ResponseEntity<>(mecanico, status);
 

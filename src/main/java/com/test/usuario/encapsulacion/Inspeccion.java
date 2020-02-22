@@ -14,14 +14,21 @@ public class Inspeccion {
 
     private String texto;
 
-    private LocalTime hora;
+    private LocalTime horaInicio;
+    private LocalTime horaFin;
 
     public Inspeccion() {
     }
 
-    public Inspeccion(String texto, LocalTime hora) {
+    public Inspeccion(String texto, LocalTime horaInicio) {
         this.texto = texto;
-        this.hora = hora;
+        this.horaInicio = horaInicio;
+    }
+
+    public Inspeccion(String texto, LocalTime horaInicio, LocalTime horaFin) {
+        this.texto = texto;
+        this.horaInicio = horaInicio;
+        this.horaFin = horaFin;
     }
 
     public Long getId() {
@@ -40,18 +47,25 @@ public class Inspeccion {
         this.texto = texto;
     }
 
-    public LocalTime getHora() {
-        return hora;
+    public LocalTime getHoraInicio() {
+        return horaInicio;
     }
 
-    public void setHora(LocalTime hora) {
-        this.hora = hora;
+    public void setHoraInicio(LocalTime hora) {
+        this.horaInicio = hora;
     }
 
     @Override
     public String toString() {
-        return "Inspeccion [hora=" + hora + ", id=" + id + ", texto=" + texto + "]";
+        return "Inspeccion [hora=" + horaInicio + ", id=" + id + ", texto=" + texto + "]";
     }
 
-    
+    public LocalTime getHoraFin() {
+        return horaFin;
+    }
+
+    public void setHoraFin(LocalTime horaFin) {
+        this.horaFin = horaFin;
+    }
+
 }

@@ -29,6 +29,12 @@ public class Usuario {
         this.nombre = nombre;
     }
 
+    public Usuario(int user, String nombre,int pass) {
+        this.user = user;
+        this.pass = pass;
+        this.nombre = nombre;
+    }
+
     public Long getId() {
         return id;
     }

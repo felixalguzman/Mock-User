@@ -1,8 +1,8 @@
 package com.test.usuario.encapsulacion;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import com.test.usuario.enums.TipoParada;
+
+import javax.persistence.*;
 
 @Entity
 public class Parada {
@@ -15,12 +15,21 @@ public class Parada {
 
     private String texto;
 
+    @Enumerated(EnumType.STRING)
+    private TipoParada tipoParada;
+
     public Parada() {
     }
 
-    public Parada( int codigoParada, String texto) {
+    public Parada(int codigoParada, String texto) {
         this.codigoParada = codigoParada;
         this.texto = texto;
+    }
+
+    public Parada(int codigoParada, String texto, TipoParada tipoParada) {
+        this.codigoParada = codigoParada;
+        this.texto = texto;
+        this.tipoParada = tipoParada;
     }
 
     public Long getId() {
@@ -45,5 +54,13 @@ public class Parada {
 
     public void setTexto(String texto) {
         this.texto = texto;
+    }
+
+    public TipoParada getTipoParada() {
+        return tipoParada;
+    }
+
+    public void setTipoParada(TipoParada tipoParada) {
+        this.tipoParada = tipoParada;
     }
 }
