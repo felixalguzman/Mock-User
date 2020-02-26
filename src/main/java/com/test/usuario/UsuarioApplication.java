@@ -3,6 +3,7 @@ package com.test.usuario;
 import com.test.usuario.encapsulacion.Inspeccion;
 import com.test.usuario.encapsulacion.Parada;
 import com.test.usuario.encapsulacion.Usuario;
+import com.test.usuario.enums.TipoParada;
 import com.test.usuario.servicios.InspeccionService;
 import com.test.usuario.servicios.ParadaService;
 import com.test.usuario.servicios.UsuarioService;
@@ -31,176 +32,7 @@ public class UsuarioApplication {
         crearDesde9000Hasta11000(usuarioService);
         crearDesde11000HastaFinal(usuarioService);
 
-        Parada parada0 = new Parada(1132, "Finger Cigar");
-        Parada parada1 = new Parada(1131, "Transfer Cigar");
-        Parada parada2 = new Parada(1216, "Piñon de Transfer Cigar");
-        Parada parada3 = new Parada(1133, "Head Disc");
-        Parada parada4 = new Parada(1273, "Tranque del eje del transfer bunch");
-        Parada parada5 = new Parada(1219, "Pin de transfer cigar");
-        Parada parada6 = new Parada(1130, "Finger Bunch");
-        Parada parada7 = new Parada(1129, "Transfer bunch");
-        Parada parada8 = new Parada(1134, "Set De Rolos");
-        Parada parada9 = new Parada(1270, "Tranque del set de rolos");
-        Parada parada10 = new Parada(1135, "Knife Drop");
-        Parada parada11 = new Parada(1136, "Collaring");
-        Parada parada12 = new Parada(1137, "Plato");
-        Parada parada13 = new Parada(1138, "Flag Knife");
-        Parada parada14 = new Parada(1139, "Head Block");
-        Parada parada15 = new Parada(1168, "Aguja");
-        Parada parada16 = new Parada(1169, "Felpa de aguja");
-        Parada parada17 = new Parada(1170, "Rod Bushing de la Aguja");
-        Parada parada18 = new Parada(1211, "Exentrica de Aguja");
-        Parada parada19 = new Parada(1252, "Calibración Felpa de Aguja");
-        Parada parada20 = new Parada(1253, "Cambio Can roller de Aguja");
-        Parada parada21 = new Parada(1212, "Brazo de Aguja");
-        Parada parada22 = new Parada(1140, "Empujador Rolling Device");
-        Parada parada23 = new Parada(1141, "Soporte Rolling Device");
-        Parada parada24 = new Parada(1142, "Pulley arm Rolling Device");
-        Parada parada25 = new Parada(1143, "Spring Rolling Device");
-        Parada parada26 = new Parada(1184, "Nouzle");
-        Parada parada27 = new Parada(1220, "Pin del Head Block");
-        Parada parada28 = new Parada(1268, "Cambio de Roll Stud");
-        Parada parada29 = new Parada(1171, "Paster Loop");
-        Parada parada30 = new Parada(1185, "TORRE WRAPER");
-        Parada parada31 = new Parada(1186, "Cuchillas");
-        Parada parada32 = new Parada(1187, "Transfer wrapper");
-        Parada parada33 = new Parada(1188, "Spring Transfer");
-        Parada parada34 = new Parada(1274, "Tranque del paster loop");
-        Parada parada35 = new Parada(1189, "Bandeja sistema alimentación");
-        Parada parada36 = new Parada(1163, "Dardo");
-        Parada parada37 = new Parada(1164, "Rodamientos del Rolo de Corte");
-        Parada parada38 = new Parada(1165, "Felpas del Rolo de Corte");
-        Parada parada39 = new Parada(1279, "Tranque de rolos de corte");
-        Parada parada40 = new Parada(1280, "Tranque en la base de los rolo de corte.(AMF)");
-        Parada parada41 = new Parada(1281, "Calibración carro rolos de corte ( Arenco ).");
-        Parada parada42 = new Parada(1272, "Tranque de leva de rolos de corte");
-        Parada parada43 = new Parada(1166, "Rolo De Corte");
-        Parada parada44 = new Parada(1172, "En espera de atención mecánica");
-        Parada parada45 = new Parada(1174, "Arreglo de Conveyor");
-        Parada parada46 = new Parada(1175, "Descalibracion del Jaw Opening");
-        Parada parada47 = new Parada(1177, "Spring tensor correa de clochet roto");
-        Parada parada48 = new Parada(1178, "Spring del Crimper roto");
-        Parada parada49 = new Parada(1179, "Correa rota");
-        Parada parada50 = new Parada(1180, "Espera de Repuestos");
-        Parada parada51 = new Parada(1190, "Máquina sometida a evaluación");
-        Parada parada52 = new Parada(1191, "Carro transportador");
-        Parada parada53 = new Parada(1192, "Fingers del carro transportador");
-        Parada parada54 = new Parada(1193, "Plunyer");
-        Parada parada55 = new Parada(1194, "Magazine");
-        Parada parada56 = new Parada(1195, "Cuchillas del Magazine");
-        Parada parada57 = new Parada(1196, "Transfer de Picadura");
-        Parada parada58 = new Parada(1197, "Fingers del Transfer de Picadura");
-        Parada parada59 = new Parada(1198, "Caja de Picadura");
-        Parada parada60 = new Parada(1199, "Transfer Transportador de Capa");
-        Parada parada61 = new Parada(1200, "Lona");
-        Parada parada62 = new Parada(1201, "Calibración de los tiempos del Backend (los ceros)");
-        Parada parada63 = new Parada(1217, "En espera de pieza desde máquinas herramientas");
-        Parada parada64 = new Parada(1218, "Mal funcionamiento de Guardas");
-        Parada parada65 = new Parada(1254, "Callibración de Clutch");
-        Parada parada66 = new Parada(1221, "Maquina sometida a Reparacion");
-        Parada parada67 = new Parada(1298, "Falla dispositivo/sistema para casquillos");
-        Parada parada68 = new Parada(1283, "Tranque Jaw Opening.");
-        Parada parada69 = new Parada(1278, "Tranque de levas");
-        Parada parada70 = new Parada(1284, "Tranque del plato.");
-        Parada parada71 = new Parada(1285, "Tranque de la manivela del clutch.");
-        Parada parada72 = new Parada(1286, "Tranque del clutch.");
-        Parada parada73 = new Parada(1269, "Calibración de Crimpers");
-        Parada parada74 = new Parada(1202, "Carro rolador del cigarro");
-        Parada parada75 = new Parada(1287, "Tranque en la base de los rolos de corte. (Backend)");
-        Parada parada76 = new Parada(1288, "Tranque en el carro transportador de cigarro. (Backend)");
-        Parada parada77 = new Parada(1289, "Tranque en el joke. (Backend)");
-        Parada parada78 = new Parada(1290, "Tranque en el conveyor. (Backend)");
-        Parada parada79 = new Parada(1291, "Rotura del pin de la cuchilla del magazine. (Backend)");
-        Parada parada80 = new Parada(1292, "Rotura del pedal del freno. (Backend)");
-        Parada parada81 = new Parada(1293, "Rotura del pin de protección de la máquina. (Backend)");
-        Parada parada82 = new Parada(1294, "Calibración del pedal de freno. (Backend)");
-        Parada parada83 = new Parada(1295, "Calibración de palanca de emergencia. (Backend)");
-        Parada parada84 = new Parada(1203, "En espera de Técnico Eléctrico");
-        Parada parada85 = new Parada(1204, "Falla en fusibles");
-        Parada parada86 = new Parada(1205, "Falla de interruptores");
-        Parada parada87 = new Parada(1206, "Falla de Relay");
-        Parada parada88 = new Parada(1207, "Falla de Swicht Magnetico");
-        Parada parada89 = new Parada(1208, "Falla en el Pedal Swicht");
-        Parada parada90 = new Parada(1209, "Falla en las Escobillas");
-        Parada parada91 = new Parada(1210, "Falla en Pista del Cluch");
-        Parada parada92 = new Parada(1222, "Luz operacional quemada");
-        Parada parada93 = new Parada(1223, "Problemas eléctrico de motor principal");
-        Parada parada94 = new Parada(1144, "Head Knuler");
-        Parada parada95 = new Parada(1145, "Cuchillas del cangrejo");
-        Parada parada96 = new Parada(1146, "Manguera del Knuler");
-        Parada parada97 = new Parada(1147, "Guias del Knuler");
-        Parada parada98 = new Parada(1148, "Cam Roll Knuler");
-        Parada parada99 = new Parada(1149, "Cangrejo del Knuler");
-        Parada parada100 = new Parada(1150, "Finger knuler");
-        Parada parada101 = new Parada(1224, "Sensor inductivo averiado");
-        Parada parada102 = new Parada(1225, "Ajuste de sensor inductivo");
-        Parada parada103 = new Parada(1226, "Falla de sensor de hopper");
-        Parada parada104 = new Parada(1227, "Sensor de cigarros averiado");
-        Parada parada105 = new Parada(1228, "Sensor de papel averiado");
-        Parada parada106 = new Parada(1229, "Tarjeta temporizadora averiada");
-        Parada parada107 = new Parada(1230, "Problemas de serie");
-        Parada parada108 = new Parada(1151, "Soporte del Knuler");
-        Parada parada109 = new Parada(1152, "Spring del Knuler");
-        Parada parada110 = new Parada(1275, "Tranque del joke");
-        Parada parada111 = new Parada(1276, "Tranque de cangrejo");
-        Parada parada112 = new Parada(1277, "Tranque del eje del head knuler");
-        Parada parada113 = new Parada(1214, "Levas de Cangrejos");
-        Parada parada114 = new Parada(1215, "Spring de Cangrejo");
-        Parada parada115 = new Parada(1231, "Configuracion de serie");
-        Parada parada116 = new Parada(1232, "Falla de la succión");
-        Parada parada117 = new Parada(1233, "Falla de fuente de alimentación DC Tray Loader");
-        Parada parada118 = new Parada(1234, "Falla de Suministro Eléctrico");
-        Parada parada119 = new Parada(1235, "Falla Sistema de Iluminación");
-        Parada parada120 = new Parada(1236, "Falla de Variador Backend");
-        Parada parada121 = new Parada(1237, "Falla de Braker Principal Backend");
-        Parada parada122 = new Parada(1238, "Falla de sensor conteo de cigarros Backend");
-        Parada parada123 = new Parada(1153, "Válvula de Succión");
-        Parada parada124 = new Parada(1154, "Succión Head");
-        Parada parada125 = new Parada(1155, "Bomba de Succión");
-        Parada parada126 = new Parada(1156, "Logueo Inferior");
-        Parada parada127 = new Parada(1157, "Rodamiento Succión Head");
-        Parada parada128 = new Parada(1158, "Impele sJoke");
-        Parada parada129 = new Parada(1159, "Logueo Superior Joke");
-        Parada parada130 = new Parada(1160, "Filtros Del Top Carrier");
-        Parada parada131 = new Parada(1255, "Cambio de Rodamiento Suction Head");
-        Parada parada132 = new Parada(1239, "Falla de motor de succión Backed");
-        Parada parada133 = new Parada(1240, "Falla sensor entrada de cigarros");
-        Parada parada134 = new Parada(1241, "Falla / Cambio sensor conteo de cigarros");
-        Parada parada135 = new Parada(1242, "Falla / cambio de sensor Tray Loader en posición");
-        Parada parada136 = new Parada(1243, "Falla / Cambio sensor entrada de Tray Loader");
-        Parada parada137 = new Parada(1244, "Falla / Cambio Variador de Tray Loader");
-        Parada parada138 = new Parada(1245, "Falla / Cambio Sensores inductivos Tray Loader");
-        Parada parada139 = new Parada(1246, "Máquina entregada a Mantenimiento");
-        Parada parada140 = new Parada(1247, "Espera de llamada del Técnico Eléctrico");
-        Parada parada141 = new Parada(1256, "Cambio del tiempo Válvula con el Suction Head");
-        Parada parada142 = new Parada(1257, "Alineación Top Carrier con Suction Head");
-        Parada parada143 = new Parada(1258, "Limpieza Suction Head");
-        Parada parada144 = new Parada(1282, "Tranque del succión head");
-        Parada parada145 = new Parada(1259, "Limpieza Top Carrier");
-        Parada parada146 = new Parada(1161, "Cremallera Del Top Carrier");
-        Parada parada147 = new Parada(1126, "Cadena Del Hopper");
-        Parada parada148 = new Parada(1271, "Tranque del Hopper");
-        Parada parada149 = new Parada(1127, "Tip Vibrador");
-        Parada parada150 = new Parada(1128, "Bandeja");
-        Parada parada151 = new Parada(1181, "Correas trancadas");
-        Parada parada152 = new Parada(1182, "Descalibración Transfer bunch");
-        Parada parada153 = new Parada(1183, "Tray loader");
-        paradaService.crear(parada0, parada1, parada2, parada3, parada4, parada5, parada6, parada7, parada8, parada9,
-                parada10, parada11, parada12, parada13, parada14, parada15, parada16, parada17, parada18, parada19,
-                parada20, parada21, parada22, parada23, parada24, parada25, parada26, parada27, parada28, parada29,
-                parada30, parada31, parada32, parada33, parada34, parada35, parada36, parada37, parada38, parada39,
-                parada40, parada41, parada42, parada43, parada44, parada45, parada46, parada47, parada48, parada49,
-                parada50, parada51, parada52, parada53, parada54, parada55, parada56, parada57, parada58, parada59,
-                parada60, parada61, parada62, parada63, parada64, parada65, parada66, parada67, parada68, parada69,
-                parada70, parada71, parada72, parada73, parada74, parada75, parada76, parada77, parada78, parada79,
-                parada80, parada81, parada82, parada83, parada84, parada85, parada86, parada87, parada88, parada89,
-                parada90, parada91, parada92, parada93, parada94, parada95, parada96, parada97, parada98, parada99,
-                parada100, parada101, parada102, parada103, parada104, parada105, parada106, parada107, parada108,
-                parada109, parada110, parada111, parada112, parada113, parada114, parada115, parada116, parada117,
-                parada118, parada119, parada120, parada121, parada122, parada123, parada124, parada125, parada126,
-                parada127, parada128, parada129, parada130, parada131, parada132, parada133, parada134, parada135,
-                parada136, parada137, parada138, parada139, parada140, parada141, parada142, parada143, parada144,
-                parada145, parada146, parada147, parada148, parada149, parada150, parada151, parada152, parada153);
+        crearParadas(paradaService);
 
         // Turno 1
         Inspeccion inspeccion = new Inspeccion("Limpieza Lona", LocalTime.of(6, 30), LocalTime.of(7, 30));
@@ -218,9 +50,9 @@ public class UsuarioApplication {
         Inspeccion inspeccion12 = new Inspeccion("Limpieza filtro", LocalTime.of(10, 31), LocalTime.of(12, 30));
         Inspeccion inspeccion13 = new Inspeccion("Limpieza filtro", LocalTime.of(12, 31), LocalTime.of(14, 30));
 
-        Inspeccion inspeccion14 = new Inspeccion("Limpieza lubricacion de maquina", LocalTime.of(6, 30), LocalTime.of(15, 30));
-        Inspeccion inspeccion15 = new Inspeccion("Verificacion de calibracion de paste loop", LocalTime.of(6, 30), LocalTime.of(15, 30));
-        Inspeccion inspeccion16 = new Inspeccion("Verificacion de los sprints del top carier", LocalTime.of(6, 30), LocalTime.of(15, 30));
+        Inspeccion inspeccion14 = new Inspeccion("Limpieza lubricacion de maquina", LocalTime.of(0, 0), LocalTime.of(23, 59));
+        Inspeccion inspeccion15 = new Inspeccion("Verificacion de calibracion de paste loop", LocalTime.of(0, 0), LocalTime.of(23, 59));
+        Inspeccion inspeccion16 = new Inspeccion("Verificacion de los sprints del top carier", LocalTime.of(0, 0), LocalTime.of(23, 59));
 
         // Turno 2
         Inspeccion inspeccion17 = new Inspeccion("Limpieza Lona", LocalTime.of(16, 30), LocalTime.of(17, 30));
@@ -238,16 +70,13 @@ public class UsuarioApplication {
         Inspeccion inspeccion28 = new Inspeccion("Limpieza filtro", LocalTime.of(20, 31), LocalTime.of(22, 30));
         Inspeccion inspeccion29 = new Inspeccion("Limpieza filtro", LocalTime.of(22, 31), LocalTime.of(0, 30));
 
-        Inspeccion inspeccion30 = new Inspeccion("Limpieza lubricacion de maquina", LocalTime.of(16, 30), LocalTime.of(0, 30));
-        Inspeccion inspeccion31 = new Inspeccion("Verificacion de calibracion de paste loop", LocalTime.of(16, 30), LocalTime.of(0, 30));
-        Inspeccion inspeccion32 = new Inspeccion("Verificacion de los sprints del top carier", LocalTime.of(16, 30), LocalTime.of(0, 30));
 
         inspeccionService.crear(inspeccion, inspeccion2, inspeccion3, inspeccion4, inspeccion5, inspeccion6,
                 inspeccion7, inspeccion8, inspeccion9, inspeccion10, inspeccion11, inspeccion12, inspeccion13,
                 inspeccion14, inspeccion15, inspeccion16);
 
         inspeccionService.crear(inspeccion17, inspeccion18, inspeccion19, inspeccion20, inspeccion21, inspeccion22,
-                inspeccion23, inspeccion24, inspeccion25, inspeccion26, inspeccion27, inspeccion28, inspeccion29, inspeccion30, inspeccion31, inspeccion32);
+                inspeccion23, inspeccion24, inspeccion25, inspeccion26, inspeccion27, inspeccion28, inspeccion29);
 
     }
 
@@ -12440,6 +12269,207 @@ public class UsuarioApplication {
         Usuario usuario12154 = new Usuario(12739, "DANIEL CONTRERAS CONTRERAS", 12739);
         Usuario usuario12155 = new Usuario(12740, "MARIA TERESA PEÑA RODRIGUEZ", 12740);
         usuarioService.crear(usuario11000, usuario11001, usuario11002, usuario11003, usuario11004, usuario11005, usuario11006, usuario11007, usuario11008, usuario11009, usuario11010, usuario11011, usuario11012, usuario11013, usuario11014, usuario11015, usuario11016, usuario11017, usuario11018, usuario11019, usuario11020, usuario11021, usuario11022, usuario11023, usuario11024, usuario11025, usuario11026, usuario11027, usuario11028, usuario11029, usuario11030, usuario11031, usuario11032, usuario11033, usuario11034, usuario11035, usuario11036, usuario11037, usuario11038, usuario11039, usuario11040, usuario11041, usuario11042, usuario11043, usuario11044, usuario11045, usuario11046, usuario11047, usuario11048, usuario11049, usuario11050, usuario11051, usuario11052, usuario11053, usuario11054, usuario11055, usuario11056, usuario11057, usuario11058, usuario11059, usuario11060, usuario11061, usuario11062, usuario11063, usuario11064, usuario11065, usuario11066, usuario11067, usuario11068, usuario11069, usuario11070, usuario11071, usuario11072, usuario11073, usuario11074, usuario11075, usuario11076, usuario11077, usuario11078, usuario11079, usuario11080, usuario11081, usuario11082, usuario11083, usuario11084, usuario11085, usuario11086, usuario11087, usuario11088, usuario11089, usuario11090, usuario11091, usuario11092, usuario11093, usuario11094, usuario11095, usuario11096, usuario11097, usuario11098, usuario11099, usuario11100, usuario11101, usuario11102, usuario11103, usuario11104, usuario11105, usuario11106, usuario11107, usuario11108, usuario11109, usuario11110, usuario11111, usuario11112, usuario11113, usuario11114, usuario11115, usuario11116, usuario11117, usuario11118, usuario11119, usuario11120, usuario11121, usuario11122, usuario11123, usuario11124, usuario11125, usuario11126, usuario11127, usuario11128, usuario11129, usuario11130, usuario11131, usuario11132, usuario11133, usuario11134, usuario11135, usuario11136, usuario11137, usuario11138, usuario11139, usuario11140, usuario11141, usuario11142, usuario11143, usuario11144, usuario11145, usuario11146, usuario11147, usuario11148, usuario11149, usuario11150, usuario11151, usuario11152, usuario11153, usuario11154, usuario11155, usuario11156, usuario11157, usuario11158, usuario11159, usuario11160, usuario11161, usuario11162, usuario11163, usuario11164, usuario11165, usuario11166, usuario11167, usuario11168, usuario11169, usuario11170, usuario11171, usuario11172, usuario11173, usuario11174, usuario11175, usuario11176, usuario11177, usuario11178, usuario11179, usuario11180, usuario11181, usuario11182, usuario11183, usuario11184, usuario11185, usuario11186, usuario11187, usuario11188, usuario11189, usuario11190, usuario11191, usuario11192, usuario11193, usuario11194, usuario11195, usuario11196, usuario11197, usuario11198, usuario11199, usuario11200, usuario11201, usuario11202, usuario11203, usuario11204, usuario11205, usuario11206, usuario11207, usuario11208, usuario11209, usuario11210, usuario11211, usuario11212, usuario11213, usuario11214, usuario11215, usuario11216, usuario11217, usuario11218, usuario11219, usuario11220, usuario11221, usuario11222, usuario11223, usuario11224, usuario11225, usuario11226, usuario11227, usuario11228, usuario11229, usuario11230, usuario11231, usuario11232, usuario11233, usuario11234, usuario11235, usuario11236, usuario11237, usuario11238, usuario11239, usuario11240, usuario11241, usuario11242, usuario11243, usuario11244, usuario11245, usuario11246, usuario11247, usuario11248, usuario11249, usuario11250, usuario11251, usuario11252, usuario11253, usuario11254, usuario11255, usuario11256, usuario11257, usuario11258, usuario11259, usuario11260, usuario11261, usuario11262, usuario11263, usuario11264, usuario11265, usuario11266, usuario11267, usuario11268, usuario11269, usuario11270, usuario11271, usuario11272, usuario11273, usuario11274, usuario11275, usuario11276, usuario11277, usuario11278, usuario11279, usuario11280, usuario11281, usuario11282, usuario11283, usuario11284, usuario11285, usuario11286, usuario11287, usuario11288, usuario11289, usuario11290, usuario11291, usuario11292, usuario11293, usuario11294, usuario11295, usuario11296, usuario11297, usuario11298, usuario11299, usuario11300, usuario11301, usuario11302, usuario11303, usuario11304, usuario11305, usuario11306, usuario11307, usuario11308, usuario11309, usuario11310, usuario11311, usuario11312, usuario11313, usuario11314, usuario11315, usuario11316, usuario11317, usuario11318, usuario11319, usuario11320, usuario11321, usuario11322, usuario11323, usuario11324, usuario11325, usuario11326, usuario11327, usuario11328, usuario11329, usuario11330, usuario11331, usuario11332, usuario11333, usuario11334, usuario11335, usuario11336, usuario11337, usuario11338, usuario11339, usuario11340, usuario11341, usuario11342, usuario11343, usuario11344, usuario11345, usuario11346, usuario11347, usuario11348, usuario11349, usuario11350, usuario11351, usuario11352, usuario11353, usuario11354, usuario11355, usuario11356, usuario11357, usuario11358, usuario11359, usuario11360, usuario11361, usuario11362, usuario11363, usuario11364, usuario11365, usuario11366, usuario11367, usuario11368, usuario11369, usuario11370, usuario11371, usuario11372, usuario11373, usuario11374, usuario11375, usuario11376, usuario11377, usuario11378, usuario11379, usuario11380, usuario11381, usuario11382, usuario11383, usuario11384, usuario11385, usuario11386, usuario11387, usuario11388, usuario11389, usuario11390, usuario11391, usuario11392, usuario11393, usuario11394, usuario11395, usuario11396, usuario11397, usuario11398, usuario11399, usuario11400, usuario11401, usuario11402, usuario11403, usuario11404, usuario11405, usuario11406, usuario11407, usuario11408, usuario11409, usuario11410, usuario11411, usuario11412, usuario11413, usuario11414, usuario11415, usuario11416, usuario11417, usuario11418, usuario11419, usuario11420, usuario11421, usuario11422, usuario11423, usuario11424, usuario11425, usuario11426, usuario11427, usuario11428, usuario11429, usuario11430, usuario11431, usuario11432, usuario11433, usuario11434, usuario11435, usuario11436, usuario11437, usuario11438, usuario11439, usuario11440, usuario11441, usuario11442, usuario11443, usuario11444, usuario11445, usuario11446, usuario11447, usuario11448, usuario11449, usuario11450, usuario11451, usuario11452, usuario11453, usuario11454, usuario11455, usuario11456, usuario11457, usuario11458, usuario11459, usuario11460, usuario11461, usuario11462, usuario11463, usuario11464, usuario11465, usuario11466, usuario11467, usuario11468, usuario11469, usuario11470, usuario11471, usuario11472, usuario11473, usuario11474, usuario11475, usuario11476, usuario11477, usuario11478, usuario11479, usuario11480, usuario11481, usuario11482, usuario11483, usuario11484, usuario11485, usuario11486, usuario11487, usuario11488, usuario11489, usuario11490, usuario11491, usuario11492, usuario11493, usuario11494, usuario11495, usuario11496, usuario11497, usuario11498, usuario11499, usuario11500, usuario11501, usuario11502, usuario11503, usuario11504, usuario11505, usuario11506, usuario11507, usuario11508, usuario11509, usuario11510, usuario11511, usuario11512, usuario11513, usuario11514, usuario11515, usuario11516, usuario11517, usuario11518, usuario11519, usuario11520, usuario11521, usuario11522, usuario11523, usuario11524, usuario11525, usuario11526, usuario11527, usuario11528, usuario11529, usuario11530, usuario11531, usuario11532, usuario11533, usuario11534, usuario11535, usuario11536, usuario11537, usuario11538, usuario11539, usuario11540, usuario11541, usuario11542, usuario11543, usuario11544, usuario11545, usuario11546, usuario11547, usuario11548, usuario11549, usuario11550, usuario11551, usuario11552, usuario11553, usuario11554, usuario11555, usuario11556, usuario11557, usuario11558, usuario11559, usuario11560, usuario11561, usuario11562, usuario11563, usuario11564, usuario11565, usuario11566, usuario11567, usuario11568, usuario11569, usuario11570, usuario11571, usuario11572, usuario11573, usuario11574, usuario11575, usuario11576, usuario11577, usuario11578, usuario11579, usuario11580, usuario11581, usuario11582, usuario11583, usuario11584, usuario11585, usuario11586, usuario11587, usuario11588, usuario11589, usuario11590, usuario11591, usuario11592, usuario11593, usuario11594, usuario11595, usuario11596, usuario11597, usuario11598, usuario11599, usuario11600, usuario11601, usuario11602, usuario11603, usuario11604, usuario11605, usuario11606, usuario11607, usuario11608, usuario11609, usuario11610, usuario11611, usuario11612, usuario11613, usuario11614, usuario11615, usuario11616, usuario11617, usuario11618, usuario11619, usuario11620, usuario11621, usuario11622, usuario11623, usuario11624, usuario11625, usuario11626, usuario11627, usuario11628, usuario11629, usuario11630, usuario11631, usuario11632, usuario11633, usuario11634, usuario11635, usuario11636, usuario11637, usuario11638, usuario11639, usuario11640, usuario11641, usuario11642, usuario11643, usuario11644, usuario11645, usuario11646, usuario11647, usuario11648, usuario11649, usuario11650, usuario11651, usuario11652, usuario11653, usuario11654, usuario11655, usuario11656, usuario11657, usuario11658, usuario11659, usuario11660, usuario11661, usuario11662, usuario11663, usuario11664, usuario11665, usuario11666, usuario11667, usuario11668, usuario11669, usuario11670, usuario11671, usuario11672, usuario11673, usuario11674, usuario11675, usuario11676, usuario11677, usuario11678, usuario11679, usuario11680, usuario11681, usuario11682, usuario11683, usuario11684, usuario11685, usuario11686, usuario11687, usuario11688, usuario11689, usuario11690, usuario11691, usuario11692, usuario11693, usuario11694, usuario11695, usuario11696, usuario11697, usuario11698, usuario11699, usuario11700, usuario11701, usuario11702, usuario11703, usuario11704, usuario11705, usuario11706, usuario11707, usuario11708, usuario11709, usuario11710, usuario11711, usuario11712, usuario11713, usuario11714, usuario11715, usuario11716, usuario11717, usuario11718, usuario11719, usuario11720, usuario11721, usuario11722, usuario11723, usuario11724, usuario11725, usuario11726, usuario11727, usuario11728, usuario11729, usuario11730, usuario11731, usuario11732, usuario11733, usuario11734, usuario11735, usuario11736, usuario11737, usuario11738, usuario11739, usuario11740, usuario11741, usuario11742, usuario11743, usuario11744, usuario11745, usuario11746, usuario11747, usuario11748, usuario11749, usuario11750, usuario11751, usuario11752, usuario11753, usuario11754, usuario11755, usuario11756, usuario11757, usuario11758, usuario11759, usuario11760, usuario11761, usuario11762, usuario11763, usuario11764, usuario11765, usuario11766, usuario11767, usuario11768, usuario11769, usuario11770, usuario11771, usuario11772, usuario11773, usuario11774, usuario11775, usuario11776, usuario11777, usuario11778, usuario11779, usuario11780, usuario11781, usuario11782, usuario11783, usuario11784, usuario11785, usuario11786, usuario11787, usuario11788, usuario11789, usuario11790, usuario11791, usuario11792, usuario11793, usuario11794, usuario11795, usuario11796, usuario11797, usuario11798, usuario11799, usuario11800, usuario11801, usuario11802, usuario11803, usuario11804, usuario11805, usuario11806, usuario11807, usuario11808, usuario11809, usuario11810, usuario11811, usuario11812, usuario11813, usuario11814, usuario11815, usuario11816, usuario11817, usuario11818, usuario11819, usuario11820, usuario11821, usuario11822, usuario11823, usuario11824, usuario11825, usuario11826, usuario11827, usuario11828, usuario11829, usuario11830, usuario11831, usuario11832, usuario11833, usuario11834, usuario11835, usuario11836, usuario11837, usuario11838, usuario11839, usuario11840, usuario11841, usuario11842, usuario11843, usuario11844, usuario11845, usuario11846, usuario11847, usuario11848, usuario11849, usuario11850, usuario11851, usuario11852, usuario11853, usuario11854, usuario11855, usuario11856, usuario11857, usuario11858, usuario11859, usuario11860, usuario11861, usuario11862, usuario11863, usuario11864, usuario11865, usuario11866, usuario11867, usuario11868, usuario11869, usuario11870, usuario11871, usuario11872, usuario11873, usuario11874, usuario11875, usuario11876, usuario11877, usuario11878, usuario11879, usuario11880, usuario11881, usuario11882, usuario11883, usuario11884, usuario11885, usuario11886, usuario11887, usuario11888, usuario11889, usuario11890, usuario11891, usuario11892, usuario11893, usuario11894, usuario11895, usuario11896, usuario11897, usuario11898, usuario11899, usuario11900, usuario11901, usuario11902, usuario11903, usuario11904, usuario11905, usuario11906, usuario11907, usuario11908, usuario11909, usuario11910, usuario11911, usuario11912, usuario11913, usuario11914, usuario11915, usuario11916, usuario11917, usuario11918, usuario11919, usuario11920, usuario11921, usuario11922, usuario11923, usuario11924, usuario11925, usuario11926, usuario11927, usuario11928, usuario11929, usuario11930, usuario11931, usuario11932, usuario11933, usuario11934, usuario11935, usuario11936, usuario11937, usuario11938, usuario11939, usuario11940, usuario11941, usuario11942, usuario11943, usuario11944, usuario11945, usuario11946, usuario11947, usuario11948, usuario11949, usuario11950, usuario11951, usuario11952, usuario11953, usuario11954, usuario11955, usuario11956, usuario11957, usuario11958, usuario11959, usuario11960, usuario11961, usuario11962, usuario11963, usuario11964, usuario11965, usuario11966, usuario11967, usuario11968, usuario11969, usuario11970, usuario11971, usuario11972, usuario11973, usuario11974, usuario11975, usuario11976, usuario11977, usuario11978, usuario11979, usuario11980, usuario11981, usuario11982, usuario11983, usuario11984, usuario11985, usuario11986, usuario11987, usuario11988, usuario11989, usuario11990, usuario11991, usuario11992, usuario11993, usuario11994, usuario11995, usuario11996, usuario11997, usuario11998, usuario11999, usuario12000, usuario12001, usuario12002, usuario12003, usuario12004, usuario12005, usuario12006, usuario12007, usuario12008, usuario12009, usuario12010, usuario12011, usuario12012, usuario12013, usuario12014, usuario12015, usuario12016, usuario12017, usuario12018, usuario12019, usuario12020, usuario12021, usuario12022, usuario12023, usuario12024, usuario12025, usuario12026, usuario12027, usuario12028, usuario12029, usuario12030, usuario12031, usuario12032, usuario12033, usuario12034, usuario12035, usuario12036, usuario12037, usuario12038, usuario12039, usuario12040, usuario12041, usuario12042, usuario12043, usuario12044, usuario12045, usuario12046, usuario12047, usuario12048, usuario12049, usuario12050, usuario12051, usuario12052, usuario12053, usuario12054, usuario12055, usuario12056, usuario12057, usuario12058, usuario12059, usuario12060, usuario12061, usuario12062, usuario12063, usuario12064, usuario12065, usuario12066, usuario12067, usuario12068, usuario12069, usuario12070, usuario12071, usuario12072, usuario12073, usuario12074, usuario12075, usuario12076, usuario12077, usuario12078, usuario12079, usuario12080, usuario12081, usuario12082, usuario12083, usuario12084, usuario12085, usuario12086, usuario12087, usuario12088, usuario12089, usuario12090, usuario12091, usuario12092, usuario12093, usuario12094, usuario12095, usuario12096, usuario12097, usuario12098, usuario12099, usuario12100, usuario12101, usuario12102, usuario12103, usuario12104, usuario12105, usuario12106, usuario12107, usuario12108, usuario12109, usuario12110, usuario12111, usuario12112, usuario12113, usuario12114, usuario12115, usuario12116, usuario12117, usuario12118, usuario12119, usuario12120, usuario12121, usuario12122, usuario12123, usuario12124, usuario12125, usuario12126, usuario12127, usuario12128, usuario12129, usuario12130, usuario12131, usuario12132, usuario12133, usuario12134, usuario12135, usuario12136, usuario12137, usuario12138, usuario12139, usuario12140, usuario12141, usuario12142, usuario12143, usuario12144, usuario12145, usuario12146, usuario12147, usuario12148, usuario12149, usuario12150, usuario12151, usuario12152, usuario12153, usuario12154, usuario12155);
+
+    }
+
+    public static void crearParadas(ParadaService paradaService) {
+
+        Parada parada0 = new Parada(1132, "Finger Cigar", TipoParada.MECANICO);
+        Parada parada1 = new Parada(1131, "Transfer Cigar", TipoParada.MECANICO);
+        Parada parada2 = new Parada(1216 , "Piñon de Transfer Cigar", TipoParada.MECANICO);
+        Parada parada3 = new Parada(1133 , "Head Disc", TipoParada.MECANICO);
+        Parada parada4 = new Parada(1273, "Tranque del eje del transfer bunch", TipoParada.MECANICO);
+        Parada parada5 = new Parada(1219 , "Pin de transfer cigar", TipoParada.MECANICO);
+        Parada parada6 = new Parada(1130 , "Finger Bunch", TipoParada.MECANICO);
+        Parada parada7 = new Parada(1129, "Transfer bunch", TipoParada.MECANICO);
+        Parada parada8 = new Parada(1134 , "Set De Rolos", TipoParada.MECANICO);
+        Parada parada9 = new Parada(1270 , "Tranque del set de rolos", TipoParada.MECANICO);
+        Parada parada10 = new Parada(1135 , "Knife Drop", TipoParada.MECANICO);
+        Parada parada11 = new Parada(1136 , "Collaring", TipoParada.MECANICO);
+        Parada parada12 = new Parada(1137 , "Plato", TipoParada.MECANICO);
+        Parada parada13 = new Parada(1138 , "Flag Knife", TipoParada.MECANICO);
+        Parada parada14 = new Parada(1139 , "Head Block", TipoParada.MECANICO);
+        Parada parada15 = new Parada(1168 , "Aguja", TipoParada.MECANICO);
+        Parada parada16 = new Parada(1169 , "Felpa de aguja", TipoParada.MECANICO);
+        Parada parada17 = new Parada(1170 , "Rod Bushing de la Aguja", TipoParada.MECANICO);
+        Parada parada18 = new Parada(1211 , "Exentrica de Aguja", TipoParada.MECANICO);
+        Parada parada19 = new Parada(1252 , "Calibración Felpa de Aguja", TipoParada.MECANICO);
+        Parada parada20 = new Parada(1253 , "Cambio Can roller de Aguja", TipoParada.MECANICO);
+        Parada parada21 = new Parada(1212 , "Brazo de Aguja", TipoParada.MECANICO);
+        Parada parada22 = new Parada(1140 , "Empujador Rolling Device", TipoParada.MECANICO);
+        Parada parada23 = new Parada(1141 , "Soporte Rolling Device", TipoParada.MECANICO);
+        Parada parada24 = new Parada(1142 , "Pulley arm Rolling Device", TipoParada.MECANICO);
+        Parada parada25 = new Parada(1143 , "Spring Rolling Device", TipoParada.MECANICO);
+        Parada parada26 = new Parada(1184 , "Nouzle", TipoParada.MECANICO);
+        Parada parada27 = new Parada(1220 , "Pin del Head Block", TipoParada.MECANICO);
+        Parada parada28 = new Parada(1268 , "Cambio de Roll Stud", TipoParada.MECANICO);
+        Parada parada29 = new Parada(1171 , "Paster Loop", TipoParada.MECANICO);
+        Parada parada30 = new Parada(1185 , "TORRE WRAPER", TipoParada.MECANICO);
+        Parada parada31 = new Parada(1186 , "Cuchillas", TipoParada.MECANICO);
+        Parada parada32 = new Parada(1187 , "Transfer wrapper", TipoParada.MECANICO);
+        Parada parada33 = new Parada(1188 , "Spring Transfer", TipoParada.MECANICO);
+        Parada parada34 = new Parada(1274 , "Tranque del paster loop", TipoParada.MECANICO);
+        Parada parada35 = new Parada(1189 , "Bandeja sistema alimentación", TipoParada.MECANICO);
+        Parada parada36 = new Parada(1163 , "Dardo", TipoParada.MECANICO);
+        Parada parada37 = new Parada(1164 , "Rodamientos del Rolo de Corte", TipoParada.MECANICO);
+        Parada parada38 = new Parada(1165 , "Felpas del Rolo de Corte", TipoParada.MECANICO);
+        Parada parada39 = new Parada(1279 , "Tranque de rolos de corte", TipoParada.MECANICO);
+        Parada parada40 = new Parada(1280 , "Tranque en la base de los rolo de corte.(AMF)", TipoParada.MECANICO);
+        Parada parada41 = new Parada(1281 , "Calibración carro rolos de corte ( Arenco ).", TipoParada.MECANICO);
+        Parada parada42 = new Parada(1272 , "Tranque de leva de rolos de corte", TipoParada.MECANICO);
+        Parada parada43 = new Parada(1166 , "Rolo De Corte", TipoParada.MECANICO);
+        Parada parada44 = new Parada(1172 , "En espera de atención mecánica", TipoParada.MECANICO);
+        Parada parada45 = new Parada(1174 , "Arreglo de Conveyor", TipoParada.MECANICO);
+        Parada parada46 = new Parada(1175 , "Descalibracion del Jaw Opening", TipoParada.MECANICO);
+        Parada parada47 = new Parada(1177 , "Spring tensor correa de clochet roto", TipoParada.MECANICO);
+        Parada parada48 = new Parada(1178 , "Spring del Crimper roto", TipoParada.MECANICO);
+        Parada parada49 = new Parada(1179 , "Correa rota", TipoParada.MECANICO);
+        Parada parada50 = new Parada(1180 , "Espera de Repuestos", TipoParada.MECANICO);
+        Parada parada51 = new Parada(1190 , "Máquina sometida a evaluación", TipoParada.MECANICO);
+        Parada parada52 = new Parada(1191 , "Carro transportador", TipoParada.MECANICO);
+        Parada parada53 = new Parada(1192 , "Fingers del carro transportador", TipoParada.MECANICO);
+        Parada parada54 = new Parada(1193 , "Plunyer", TipoParada.MECANICO);
+        Parada parada55 = new Parada(1194 , "Magazine", TipoParada.MECANICO);
+        Parada parada56 = new Parada(1195 , "Cuchillas del Magazine", TipoParada.MECANICO);
+        Parada parada57 = new Parada(1196 , "Transfer de Picadura", TipoParada.MECANICO);
+        Parada parada58 = new Parada(1197 , "Fingers del Transfer de Picadura", TipoParada.MECANICO);
+        Parada parada59 = new Parada(1198 , "Caja de Picadura", TipoParada.MECANICO);
+        Parada parada60 = new Parada(1199 , "Transfer Transportador de Capa", TipoParada.MECANICO);
+        Parada parada61 = new Parada(1200 , "Lona", TipoParada.MECANICO);
+        Parada parada62 = new Parada(1201 , "Calibración de los tiempos del Backend (los ceros)", TipoParada.MECANICO);
+        Parada parada63 = new Parada(1217 , "En espera de pieza desde máquinas herramientas", TipoParada.MECANICO);
+        Parada parada64 = new Parada(1218 , "Mal funcionamiento de Guardas", TipoParada.MECANICO);
+        Parada parada65 = new Parada(1254 , "Callibración de Clutch", TipoParada.MECANICO);
+        Parada parada66 = new Parada(1221 , "Maquina sometida a Reparacion", TipoParada.MECANICO);
+        Parada parada67 = new Parada(1298 , "Falla dispositivo/sistema para casquillos", TipoParada.MECANICO);
+        Parada parada68 = new Parada(1283 , "Tranque Jaw Opening.", TipoParada.MECANICO);
+        Parada parada69 = new Parada(1278 , "Tranque de levas", TipoParada.MECANICO);
+        Parada parada70 = new Parada(1284 , "Tranque del plato.", TipoParada.MECANICO);
+        Parada parada71 = new Parada(1285 , "Tranque de la manivela del clutch.", TipoParada.MECANICO);
+        Parada parada72 = new Parada(1286 , "Tranque del clutch.", TipoParada.MECANICO);
+        Parada parada73 = new Parada(1269 , "Calibración de Crimpers", TipoParada.MECANICO);
+        Parada parada74 = new Parada(1202 , "Carro rolador del cigarro", TipoParada.MECANICO);
+        Parada parada75 = new Parada(1287 , "Tranque en la base de los rolos de corte. (Backend)", TipoParada.MECANICO);
+        Parada parada76 = new Parada(1288 , "Tranque en el carro transportador de cigarro. (Backend)", TipoParada.MECANICO);
+        Parada parada77 = new Parada(1289 , "Tranque en el joke. (Backend)", TipoParada.MECANICO);
+        Parada parada78 = new Parada(1290 , "Tranque en el conveyor. (Backend)", TipoParada.MECANICO);
+        Parada parada79 = new Parada(1291 , "Rotura del pin de la cuchilla del magazine. (Backend)", TipoParada.MECANICO);
+        Parada parada80 = new Parada(1292 , "Rotura del pedal del freno. (Backend)", TipoParada.MECANICO);
+        Parada parada81 = new Parada(1293 , "Rotura del pin de protección de la máquina. (Backend)", TipoParada.MECANICO);
+        Parada parada82 = new Parada(1294 , "Calibración del pedal de freno. (Backend)", TipoParada.MECANICO);
+        Parada parada83 = new Parada(1295 , "Calibración de palanca de emergencia. (Backend)", TipoParada.MECANICO);
+        Parada parada84 = new Parada(1203 , "En espera de Técnico Eléctrico", TipoParada.ELECTRICO);
+        Parada parada85 = new Parada(1204 , "Falla en fusibles", TipoParada.ELECTRICO);
+        Parada parada86 = new Parada(1205 , "Falla de interruptores", TipoParada.ELECTRICO);
+        Parada parada87 = new Parada(1206 , "Falla de Relay", TipoParada.ELECTRICO);
+        Parada parada88 = new Parada(1207 , "Falla de Swicht Magnetico", TipoParada.ELECTRICO);
+        Parada parada89 = new Parada(1208 , "Falla en el Pedal Swicht", TipoParada.ELECTRICO);
+        Parada parada90 = new Parada(1209 , "Falla en las Escobillas", TipoParada.ELECTRICO);
+        Parada parada91 = new Parada(1210 , "Falla en Pista del Cluch", TipoParada.ELECTRICO);
+        Parada parada92 = new Parada(1222 , "Luz operacional quemada", TipoParada.ELECTRICO);
+        Parada parada93 = new Parada(1223 , "Problemas eléctrico de motor principal", TipoParada.ELECTRICO);
+        Parada parada94 = new Parada(1144 , "Head Knuler", TipoParada.MECANICO);
+        Parada parada95 = new Parada(1145 , "Cuchillas del cangrejo", TipoParada.MECANICO);
+        Parada parada96 = new Parada(1146 , "Manguera del Knuler", TipoParada.MECANICO);
+        Parada parada97 = new Parada(1147 , "Guias del Knuler", TipoParada.MECANICO);
+        Parada parada98 = new Parada(1148 , "Cam Roll Knuler", TipoParada.MECANICO);
+        Parada parada99 = new Parada(1149 , "Cangrejo del Knuler", TipoParada.MECANICO);
+        Parada parada100 = new Parada(1150 , "Finger knuler", TipoParada.MECANICO);
+        Parada parada101 = new Parada(1224 , "Sensor inductivo averiado", TipoParada.ELECTRICO);
+        Parada parada102 = new Parada(1225 , "Ajuste de sensor inductivo", TipoParada.ELECTRICO);
+        Parada parada103 = new Parada(1226 , "Falla de sensor de hopper", TipoParada.ELECTRICO);
+        Parada parada104 = new Parada(1227 , "Sensor de cigarros averiado", TipoParada.ELECTRICO);
+        Parada parada105 = new Parada(1228 , "Sensor de papel averiado", TipoParada.ELECTRICO);
+        Parada parada106 = new Parada(1229 , "Tarjeta temporizadora averiada", TipoParada.ELECTRICO);
+        Parada parada107 = new Parada(1230 , "Problemas de serie", TipoParada.ELECTRICO);
+        Parada parada108 = new Parada(1151 , "Soporte del Knuler", TipoParada.MECANICO);
+        Parada parada109 = new Parada(1152 , "Spring del Knuler", TipoParada.MECANICO);
+        Parada parada110 = new Parada(1275 , "Tranque del joke", TipoParada.MECANICO);
+        Parada parada111 = new Parada(1276 , "Tranque de cangrejo", TipoParada.MECANICO);
+        Parada parada112 = new Parada(1277 , "Tranque del eje del head knuler", TipoParada.MECANICO);
+        Parada parada113 = new Parada(1214 , "Levas de Cangrejos", TipoParada.MECANICO);
+        Parada parada114 = new Parada(1215 , "Spring de Cangrejo", TipoParada.MECANICO);
+        Parada parada115 = new Parada(1231 , "Configuracion de serie", TipoParada.ELECTRICO);
+        Parada parada116 = new Parada(1232 , "Falla de la succión", TipoParada.ELECTRICO);
+        Parada parada117 = new Parada(1233 , "Falla de fuente de alimentación DC Tray Loader", TipoParada.ELECTRICO);
+        Parada parada118 = new Parada(1234 , "Falla de Suministro Eléctrico", TipoParada.ELECTRICO);
+        Parada parada119 = new Parada(1235 , "Falla Sistema de Iluminación", TipoParada.ELECTRICO);
+        Parada parada120 = new Parada(1236 , "Falla de Variador Backend", TipoParada.ELECTRICO);
+        Parada parada121 = new Parada(1237 , "Falla de Braker Principal Backend", TipoParada.ELECTRICO);
+        Parada parada122 = new Parada(1238 , "Falla de sensor conteo de cigarros Backend", TipoParada.ELECTRICO);
+        Parada parada123 = new Parada(1153 , "Válvula de Succión", TipoParada.MECANICO);
+        Parada parada124 = new Parada(1154 , "Succión Head", TipoParada.MECANICO);
+        Parada parada125 = new Parada(1155 , "Bomba de Succión", TipoParada.MECANICO);
+        Parada parada126 = new Parada(1156 , "Logueo Inferior", TipoParada.MECANICO);
+        Parada parada127 = new Parada(1157 , "Rodamiento Succión Head", TipoParada.MECANICO);
+        Parada parada128 = new Parada(1158 , "Impele sJoke", TipoParada.MECANICO);
+        Parada parada129 = new Parada(1159 , "Logueo Superior Joke", TipoParada.MECANICO);
+        Parada parada130 = new Parada(1160 , "Filtros Del Top Carrier", TipoParada.MECANICO);
+        Parada parada131 = new Parada(1255 , "Cambio de Rodamiento Suction Head", TipoParada.MECANICO);
+        Parada parada132 = new Parada(1239 , "Falla de motor de succión Backed", TipoParada.ELECTRICO);
+        Parada parada133 = new Parada(1240 , "Falla sensor entrada de cigarros", TipoParada.ELECTRICO);
+        Parada parada134 = new Parada(1241 , "Falla / Cambio sensor conteo de cigarros", TipoParada.ELECTRICO);
+        Parada parada135 = new Parada(1242 , "Falla / cambio de sensor Tray Loader en posición", TipoParada.ELECTRICO);
+        Parada parada136 = new Parada(1243 , "Falla / Cambio sensor entrada de Tray Loader", TipoParada.ELECTRICO);
+        Parada parada137 = new Parada(1244 , "Falla / Cambio Variador de Tray Loader", TipoParada.ELECTRICO);
+        Parada parada138 = new Parada(1245 , "Falla / Cambio Sensores inductivos Tray Loader", TipoParada.ELECTRICO);
+        Parada parada139 = new Parada(1246 , "Máquina entregada a Mantenimiento", TipoParada.ELECTRICO);
+        Parada parada140 = new Parada(1247 , "Espera de llamada del Técnico Eléctrico", TipoParada.ELECTRICO);
+        Parada parada141 = new Parada(1256 , "Cambio del tiempo Válvula con el Suction Head", TipoParada.MECANICO);
+        Parada parada142 = new Parada(1257 , "Alineación Top Carrier con Suction Head", TipoParada.MECANICO);
+        Parada parada143 = new Parada(1258 , "Limpieza Suction Head", TipoParada.MECANICO);
+        Parada parada144 = new Parada(1282 , "Tranque del succión head", TipoParada.MECANICO);
+        Parada parada145 = new Parada(1259 , "Limpieza Top Carrier", TipoParada.MECANICO);
+        Parada parada146 = new Parada(1161 , "Cremallera Del Top Carrier", TipoParada.MECANICO);
+        Parada parada147 = new Parada(1126 , "Cadena Del Hopper", TipoParada.MECANICO);
+        Parada parada148 = new Parada(1271 , "Tranque del Hopper", TipoParada.MECANICO);
+        Parada parada149 = new Parada(1127 , "Tip Vibrador", TipoParada.MECANICO);
+        Parada parada150 = new Parada(1128 , "Bandeja", TipoParada.MECANICO);
+        Parada parada151 = new Parada(1181 , "Correas trancadas", TipoParada.MECANICO);
+        Parada parada152 = new Parada(1182 , "Descalibración Transfer bunch", TipoParada.MECANICO);
+        Parada parada153 = new Parada(1183 , "Tray loader", TipoParada.MECANICO);
+        Parada parada154 = new Parada(2003, "Capa Mal Colocada", TipoParada.OPERATIVO);
+        Parada parada155 = new Parada(2018, "Variacion De Medida En Bonches", TipoParada.OPERATIVO);
+        Parada parada156 = new Parada(2023, "Baja Viscosidad de la Ega", TipoParada.OPERATIVO);
+        Parada parada157 = new Parada(2024, "Alta Viscosidad De La Ega", TipoParada.OPERATIVO);
+        Parada parada158 = new Parada(2025, "Bonches Con Pestaña En La Cabeza", TipoParada.OPERATIVO);
+        Parada parada159 = new Parada(2030, "Recolector tapado", TipoParada.OPERATIVO);
+        Parada parada160 = new Parada(2038 , "Contenedor con poca ega", TipoParada.OPERATIVO);
+        Parada parada161 = new Parada(2004, "Tapa Sucia", TipoParada.OPERATIVO);
+        Parada parada162 = new Parada(2026, "Bonches Achatados", TipoParada.OPERATIVO);
+        Parada parada163 = new Parada(2005, "Bonche Vacio", TipoParada.OPERATIVO);
+        Parada parada164 = new Parada(2006, "Finger Sucio", TipoParada.OPERATIVO);
+        Parada parada165 = new Parada(2007, "Plato Sucio", TipoParada.OPERATIVO);
+        Parada parada166 = new Parada(2008, "Acumulacion De Pega Al Salir El Cigarro", TipoParada.OPERATIVO);
+        Parada parada167 = new Parada(2027, "Head Knoller tapado", TipoParada.OPERATIVO);
+        Parada parada168 = new Parada(2028, "Soporte frontal de knoller levantando", TipoParada.OPERATIVO);
+        Parada parada169 = new Parada(2009, "Bonche Corto", TipoParada.OPERATIVO);
+        Parada parada170 = new Parada(2010, "Falta De Humedad En La Capa", TipoParada.OPERATIVO);
+        Parada parada171 = new Parada(2011, "Exceso De humedad En La Capa", TipoParada.OPERATIVO);
+        Parada parada172 = new Parada(2036, "Presencia de papel en hooper", TipoParada.OPERATIVO);
+        Parada parada173 = new Parada(2034, "Bonches mal colocados en hooper", TipoParada.OPERATIVO);
+        Parada parada174 = new Parada(2012, "Falta de tabaco", TipoParada.OPERATIVO);
+        Parada parada175 = new Parada(2013, "Falta de bonche", TipoParada.OPERATIVO);
+        Parada parada176 = new Parada(2020, "Falta de ega", TipoParada.OPERATIVO);
+        Parada parada177 = new Parada(2050, "Falta de Picadura", TipoParada.OPERATIVO);
+        Parada parada178 = new Parada(2041, "Rollo pegado", TipoParada.OPERATIVO);
+        Parada parada179 = new Parada(2014, "Reuniones Operacionales", TipoParada.OPERATIVO);
+        Parada parada180 = new Parada(2015, "Cambio De Producto", TipoParada.OPERATIVO);
+        Parada parada181 = new Parada(2016, "Parada A Enfermeria", TipoParada.OPERATIVO);
+        Parada parada182 = new Parada(2031, "Parada al Baño", TipoParada.OPERATIVO);
+        Parada parada183 = new Parada(2017, "Revisión Cajas Rechazadas", TipoParada.OPERATIVO);
+        Parada parada184 = new Parada(2037, "Limpieza de máquina", TipoParada.OPERATIVO);
+        Parada parada185 = new Parada(2039, "Cambio rollo de capote", TipoParada.OPERATIVO);
+        Parada parada186 = new Parada(2040, "Roctura del rollo del capote", TipoParada.OPERATIVO);
+        Parada parada187 = new Parada(2042, "Exceso De humedad en el rollo del capote", TipoParada.OPERATIVO);
+        Parada parada188 = new Parada(2043, "Limpieza del head knuler", TipoParada.OPERATIVO);
+        Parada parada189 = new Parada(2048, "Limpieza de Lona", TipoParada.OPERATIVO);
+        Parada parada190 = new Parada(2049, "Limpieza de Succión Head", TipoParada.OPERATIVO);
+        Parada parada191 = new Parada(2054, "Problemas con la Pega", TipoParada.OPERATIVO);
+        Parada parada192 = new Parada(2053, "Problemas con la Picadura (fina)", TipoParada.OPERATIVO);
+        Parada parada193 = new Parada(2051, "Humedad de Picadura", TipoParada.OPERATIVO);
+        paradaService.crear(parada0,parada1,parada2,parada3,parada4,parada5,parada6,parada7,parada8,parada9,parada10,parada11,parada12,parada13,parada14,parada15,parada16,parada17,parada18,parada19,parada20,parada21,parada22,parada23,parada24,parada25,parada26,parada27,parada28,parada29,parada30,parada31,parada32,parada33,parada34,parada35,parada36,parada37,parada38,parada39,parada40,parada41,parada42,parada43,parada44,parada45,parada46,parada47,parada48,parada49,parada50,parada51,parada52,parada53,parada54,parada55,parada56,parada57,parada58,parada59,parada60,parada61,parada62,parada63,parada64,parada65,parada66,parada67,parada68,parada69,parada70,parada71,parada72,parada73,parada74,parada75,parada76,parada77,parada78,parada79,parada80,parada81,parada82,parada83,parada84,parada85,parada86,parada87,parada88,parada89,parada90,parada91,parada92,parada93,parada94,parada95,parada96,parada97,parada98,parada99,parada100,parada101,parada102,parada103,parada104,parada105,parada106,parada107,parada108,parada109,parada110,parada111,parada112,parada113,parada114,parada115,parada116,parada117,parada118,parada119,parada120,parada121,parada122,parada123,parada124,parada125,parada126,parada127,parada128,parada129,parada130,parada131,parada132,parada133,parada134,parada135,parada136,parada137,parada138,parada139,parada140,parada141,parada142,parada143,parada144,parada145,parada146,parada147,parada148,parada149,parada150,parada151,parada152,parada153,parada154,parada155,parada156,parada157,parada158,parada159,parada160,parada161,parada162,parada163,parada164,parada165,parada166,parada167,parada168,parada169,parada170,parada171,parada172,parada173,parada174,parada175,parada176,parada177,parada178,parada179,parada180,parada181,parada182,parada183,parada184,parada185,parada186,parada187,parada188,parada189,parada190,parada191,parada192,parada193);
+
 
     }
 }

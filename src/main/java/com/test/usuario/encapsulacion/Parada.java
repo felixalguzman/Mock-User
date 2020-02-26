@@ -11,6 +11,7 @@ public class Parada {
     @GeneratedValue
     private Long id;
 
+    @Column(unique = true)
     private int codigoParada;
 
     private String texto;
